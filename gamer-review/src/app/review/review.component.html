@@ -1,0 +1,6 @@
+<div class="reviews-list">
+  <div class="review-instance" *ngFor="let review of reviews">
+    <app-review-article [review]="review"></app-review-article>
+  </div>
+  <button (click)="addReview()">HELLo</button>
+</div>

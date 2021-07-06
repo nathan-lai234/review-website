@@ -1,0 +1,14 @@
+<div class="review-wrapper">
+  <p class="title">
+    {{ review.title }}
+  </p>
+  <p class="subtitle">{{ review.subtitle }}</p>
+
+  <div *ngFor="let section of review.sections">
+    <h3>{{ section.heading }}</h3>
+    <p>{{ section.content }}</p>
+  </div>
+
+  <app-score [name]="review.game" [score]="review.score"></app-score>
+  <hr class="review-end" />
+</div>

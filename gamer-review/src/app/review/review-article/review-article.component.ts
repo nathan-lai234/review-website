@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { Review, emptyReview } from '../review';
 @Component({
   selector: 'app-review-article',
   templateUrl: './review-article.component.html',
   styleUrls: ['./review-article.component.scss'],
 })
 export class ReviewArticleComponent implements OnInit {
-  review = {
-    name: 'Trails of the Cold Steel 3',
-    score: 8,
-  };
+  @Input() review: Review = emptyReview();
 
   constructor() {}
 

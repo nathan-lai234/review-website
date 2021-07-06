@@ -3,11 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReviewArticleModule } from './review-article/review-article.module';
+import { ReviewModule } from './review/review.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ReviewArticleModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReviewModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
